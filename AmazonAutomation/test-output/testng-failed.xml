@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dependencyMethod.DependencyMethodsExplanation">
+      <class name="parameterization.ParameterTest">
         <methods>
-          <include name="search"/>
-          <include name="advanceSearch"/>
-          <include name="login"/>
-          <include name="OpenApp"/>
+          <include name="testImage"/>
+          <include name="testTitle"/>
+          <include name="testClose"/>
+          <include name="setUp"/>
+          <include name="testURL"/>
         </methods>
-      </class> <!-- dependencyMethod.DependencyMethodsExplanation -->
+      </class> <!-- parameterization.ParameterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

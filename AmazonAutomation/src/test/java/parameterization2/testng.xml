@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Automation Suite">
+
+    <parameter name="browser" value="chrome" />
+    <parameter name="baseUrl" value="https://api.myshop.com/v1" />
+
+    <test name="Product Inventory Tests">
+        <classes>
+            <class name="parameterization2.InventoryTest" />
+        </classes>
+    </test>
+
+    <test name="Staging Regression Tests">
+        <parameter name="baseUrl" value="https://staging-api.myshop.com/v1" />
+        <classes>
+            <class name="parameterization2.InventoryTest" />
+        </classes>
+    </test>
+
+</suite>

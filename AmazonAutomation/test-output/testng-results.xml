@@ -1,67 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-13T19:16:59 IST" name="Suite" finished-at="2026-05-13T19:16:59 IST" duration-ms="79">
+  <suite started-at="2026-05-17T10:14:55 IST" name="E-Commerce Automation Suite" finished-at="2026-05-17T10:14:55 IST" duration-ms="125">
     <groups>
-      <group name="functional">
-        <method signature="PaymentsTest.paymentInRupees()[pri:1, instance:grouping.PaymentsTest@50b472aa]" name="paymentInRupees" class="grouping.PaymentsTest"/>
-        <method signature="PaymentsTest.paymentInDollars()[pri:2, instance:grouping.PaymentsTest@50b472aa]" name="paymentInDollars" class="grouping.PaymentsTest"/>
-      </group> <!-- functional -->
-      <group name="regression">
-        <method signature="PaymentsTest.paymentInRupees()[pri:1, instance:grouping.PaymentsTest@50b472aa]" name="paymentInRupees" class="grouping.PaymentsTest"/>
-        <method signature="SignupTests.signUpByEmail()[pri:1, instance:grouping.SignupTests@7a69b07]" name="signUpByEmail" class="grouping.SignupTests"/>
-        <method signature="PaymentsTest.paymentInDollars()[pri:2, instance:grouping.PaymentsTest@50b472aa]" name="paymentInDollars" class="grouping.PaymentsTest"/>
-        <method signature="SignupTests.signUpByFacebook()[pri:2, instance:grouping.SignupTests@7a69b07]" name="signUpByFacebook" class="grouping.SignupTests"/>
-        <method signature="SignupTests.signUpByTwitter()[pri:3, instance:grouping.SignupTests@7a69b07]" name="signUpByTwitter" class="grouping.SignupTests"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="LoginTests.loginByEmail()[pri:1, instance:grouping.LoginTests@6ca8564a]" name="loginByEmail" class="grouping.LoginTests"/>
-        <method signature="PaymentsTest.paymentInRupees()[pri:1, instance:grouping.PaymentsTest@50b472aa]" name="paymentInRupees" class="grouping.PaymentsTest"/>
-        <method signature="LoginTests.loginByFacebook()[pri:2, instance:grouping.LoginTests@6ca8564a]" name="loginByFacebook" class="grouping.LoginTests"/>
-        <method signature="PaymentsTest.paymentInDollars()[pri:2, instance:grouping.PaymentsTest@50b472aa]" name="paymentInDollars" class="grouping.PaymentsTest"/>
-        <method signature="LoginTests.loginByTwitter()[pri:3, instance:grouping.LoginTests@6ca8564a]" name="loginByTwitter" class="grouping.LoginTests"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-13T19:16:59 IST" name="Test" finished-at="2026-05-13T19:16:59 IST" duration-ms="79">
-      <class name="grouping.SignupTests">
-        <test-method signature="signUpByEmail()[pri:1, instance:grouping.SignupTests@7a69b07]" started-at="2026-05-13T19:16:59 IST" name="signUpByEmail" finished-at="2026-05-13T19:16:59 IST" duration-ms="9" status="PASS">
+    <test started-at="2026-05-17T10:14:55 IST" name="Product Inventory Tests" finished-at="2026-05-17T10:14:55 IST" duration-ms="55">
+      <class name="parameterization2.InventoryTest">
+        <test-method is-config="true" signature="setupAutomation(java.lang.String,java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="setupAutomation" finished-at="2026-05-17T10:14:55 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://api.myshop.com/v1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUpByEmail -->
-        <test-method signature="signUpByFacebook()[pri:2, instance:grouping.SignupTests@7a69b07]" started-at="2026-05-13T19:16:59 IST" name="signUpByFacebook" finished-at="2026-05-13T19:16:59 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setupAutomation -->
+        <test-method signature="verifyLocalCache()[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="verifyLocalCache" finished-at="2026-05-17T10:14:55 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUpByFacebook -->
-        <test-method signature="signUpByTwitter()[pri:3, instance:grouping.SignupTests@7a69b07]" started-at="2026-05-13T19:16:59 IST" name="signUpByTwitter" finished-at="2026-05-13T19:16:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLocalCache -->
+        <test-method signature="verifyProductFetch(java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="verifyProductFetch" finished-at="2026-05-17T10:14:55 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api.myshop.com/v1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUpByTwitter -->
-      </class> <!-- grouping.SignupTests -->
-      <class name="grouping.LoginTests">
-        <test-method signature="loginByEmail()[pri:1, instance:grouping.LoginTests@6ca8564a]" started-at="2026-05-13T19:16:59 IST" name="loginByEmail" finished-at="2026-05-13T19:16:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyProductFetch -->
+      </class> <!-- parameterization2.InventoryTest -->
+    </test> <!-- Product Inventory Tests -->
+    <test started-at="2026-05-17T10:14:55 IST" name="Staging Regression Tests" finished-at="2026-05-17T10:14:55 IST" duration-ms="9">
+      <class name="parameterization2.InventoryTest">
+        <test-method is-config="true" signature="setupAutomation(java.lang.String,java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="setupAutomation" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://staging-api.myshop.com/v1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByEmail -->
-        <test-method signature="loginByFacebook()[pri:2, instance:grouping.LoginTests@6ca8564a]" started-at="2026-05-13T19:16:59 IST" name="loginByFacebook" finished-at="2026-05-13T19:16:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setupAutomation -->
+        <test-method signature="verifyLocalCache()[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="verifyLocalCache" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByFacebook -->
-        <test-method signature="loginByTwitter()[pri:3, instance:grouping.LoginTests@6ca8564a]" started-at="2026-05-13T19:16:59 IST" name="loginByTwitter" finished-at="2026-05-13T19:16:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLocalCache -->
+        <test-method signature="verifyProductFetch(java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="verifyProductFetch" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://staging-api.myshop.com/v1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginByTwitter -->
-      </class> <!-- grouping.LoginTests -->
-      <class name="grouping.PaymentsTest">
-        <test-method signature="paymentInRupees()[pri:1, instance:grouping.PaymentsTest@50b472aa]" started-at="2026-05-13T19:16:59 IST" name="paymentInRupees" finished-at="2026-05-13T19:16:59 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- paymentInRupees -->
-        <test-method signature="paymentInDollars()[pri:2, instance:grouping.PaymentsTest@50b472aa]" started-at="2026-05-13T19:16:59 IST" name="paymentInDollars" finished-at="2026-05-13T19:16:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- paymentInDollars -->
-      </class> <!-- grouping.PaymentsTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyProductFetch -->
+      </class> <!-- parameterization2.InventoryTest -->
+    </test> <!-- Staging Regression Tests -->
+  </suite> <!-- E-Commerce Automation Suite -->
 </testng-results>

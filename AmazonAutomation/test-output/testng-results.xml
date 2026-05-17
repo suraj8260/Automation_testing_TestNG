@@ -1,79 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-17T10:14:55 IST" name="E-Commerce Automation Suite" finished-at="2026-05-17T10:14:55 IST" duration-ms="125">
+  <suite started-at="2026-05-17T13:35:40 IST" name="Suite" finished-at="2026-05-17T13:35:43 IST" duration-ms="2886">
     <groups>
     </groups>
-    <test started-at="2026-05-17T10:14:55 IST" name="Product Inventory Tests" finished-at="2026-05-17T10:14:55 IST" duration-ms="55">
-      <class name="parameterization2.InventoryTest">
-        <test-method is-config="true" signature="setupAutomation(java.lang.String,java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="setupAutomation" finished-at="2026-05-17T10:14:55 IST" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://api.myshop.com/v1]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-05-17T13:35:40 IST" name="Test" finished-at="2026-05-17T13:35:43 IST" duration-ms="2886">
+      <class name="listenerExplanation.TestListerner">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:listenerExplanation.TestListerner@62150f9e]" started-at="2026-05-17T13:35:41 IST" name="setUp" finished-at="2026-05-17T13:35:43 IST" duration-ms="2424" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupAutomation -->
-        <test-method signature="verifyLocalCache()[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="verifyLocalCache" finished-at="2026-05-17T10:14:55 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testImage()[pri:1, instance:listenerExplanation.TestListerner@62150f9e]" started-at="2026-05-17T13:35:43 IST" name="testImage" finished-at="2026-05-17T13:35:43 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLocalCache -->
-        <test-method signature="verifyProductFetch(java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d9b7cce]" started-at="2026-05-17T10:14:55 IST" name="verifyProductFetch" finished-at="2026-05-17T10:14:55 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://api.myshop.com/v1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testImage -->
+        <test-method signature="testURL()[pri:2, instance:listenerExplanation.TestListerner@62150f9e]" started-at="2026-05-17T13:35:43 IST" name="testURL" finished-at="2026-05-17T13:35:43 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductFetch -->
-      </class> <!-- parameterization2.InventoryTest -->
-    </test> <!-- Product Inventory Tests -->
-    <test started-at="2026-05-17T10:14:55 IST" name="Staging Regression Tests" finished-at="2026-05-17T10:14:55 IST" duration-ms="9">
-      <class name="parameterization2.InventoryTest">
-        <test-method is-config="true" signature="setupAutomation(java.lang.String,java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="setupAutomation" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://staging-api.myshop.com/v1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testURL -->
+        <test-method signature="testTitle()[pri:3, instance:listenerExplanation.TestListerner@62150f9e]" started-at="2026-05-17T13:35:43 IST" name="testTitle" finished-at="2026-05-17T13:35:43 IST" depends-on-methods="listenerExplanation.TestListerner.testURL" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupAutomation -->
-        <test-method signature="verifyLocalCache()[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="verifyLocalCache" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="testClose()[pri:0, instance:listenerExplanation.TestListerner@62150f9e]" started-at="2026-05-17T13:35:43 IST" name="testClose" finished-at="2026-05-17T13:35:43 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLocalCache -->
-        <test-method signature="verifyProductFetch(java.lang.String)[pri:0, instance:parameterization2.InventoryTest@1d2adfbe]" started-at="2026-05-17T10:14:55 IST" name="verifyProductFetch" finished-at="2026-05-17T10:14:55 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://staging-api.myshop.com/v1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductFetch -->
-      </class> <!-- parameterization2.InventoryTest -->
-    </test> <!-- Staging Regression Tests -->
-  </suite> <!-- E-Commerce Automation Suite -->
+        </test-method> <!-- testClose -->
+      </class> <!-- listenerExplanation.TestListerner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

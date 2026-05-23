@@ -31,6 +31,8 @@ public class ExtentReportManager implements ITestListener {
 		
 		reports = new ExtentReports();
 		
+		reports.attachReporter(sparkReporter);
+		
 		reports.setSystemInfo("ComputerName", "local");
 		
 		reports.setSystemInfo("Environment", "QA Automation test");
